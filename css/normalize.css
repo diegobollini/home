@@ -18,7 +18,9 @@ html {
 
 body {
   margin: 0;
+  background-color: #b3b2b2;
 }
+
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -230,7 +232,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: 'Inconsolata', monospace;
   font-size: 1em;
 }
 
