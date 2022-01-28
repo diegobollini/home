@@ -18,7 +18,11 @@ html {
 
 body {
   margin: 0;
-  background-color: #b3b2b2;
+  background-image: url("/images/back.png");
+}
+
+.text_color {
+  color: aliceblue;
 }
 
 
@@ -90,6 +94,7 @@ template {
 
 a {
   background-color: transparent;
+  color: aliceblue;
 }
 
 /**
