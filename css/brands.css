@@ -82,29 +82,53 @@ button:hover,
 .button.button-default:hover,
 .button.button-default:focus {
   filter: brightness(90%) }
-  
-/* Bandcamp */
-.button.button-bandcamp {
+
+/* Ansible */
+.button.button-ansible {
+  color: #FFFFFF;
+  background-color: #A033FF }
+.button.button-ansible:hover,
+.button.button-ansible:focus {
+  filter: brightness(90%) }
+
+/* Github */
+.button.button-github {
+  color: #FFFFFF;
+  background-color: #000000 }
+.button.button-github:hover,
+.button.button-github:focus {
+  filter: brightness(90%) }
+
+/* Gitlab */
+.button.button-gitlab {
+  color: #ffffff;
+  background-color: #6151b2 }
+.button.button-gitlab:hover,
+.button.button-gitlab:focus {
+  filter: brightness(90%) }
+
+/* Dotfiles */
+.button.button-dotfiles {
   color: #FFFFFF;
   background-color: #1d9fc3 }
-.button.button-bandcamp:hover,
-.button.button-bandcamp:focus {
+.button.button-dotfiles:hover,
+.button.button-dotfiles:focus {
   filter: brightness(90%) }
 
-/* Patreon */
-.button.button-patreon {
+/* La Libre */
+.button.button-libre {
   color: #FFFFFF;
-  background-color: #ff424d }
-.button.button-patreon:hover,
-.button.button-patreon:focus {
+  background-color: #ec6b71b0 }
+.button.button-libre:hover,
+.button.button-libre:focus {
   filter: brightness(90%) }
 
-/* Signal */
-.button.button-signal {
+/* Versión 1 */
+.button.button-version {
   color: #FFFFFF;
   background-color: #3a76f0 }
-.button.button-signal:hover,
-.button.button-signal:focus {
+.button.button-version:hover,
+.button.button-version:focus {
   filter: brightness(90%) }
 
 /* Venmo */
@@ -139,29 +163,7 @@ button:hover,
 .button.button-messenger:focus {
   filter: brightness(90%) }
 
-/* Figma */
-.button.button-figma {
-  color: #FFFFFF;
-  background-color: #000000 }
-.button.button-figma:hover,
-.button.button-figma:focus {
-  filter: brightness(90%) }
 
-/* Github */
-.button.button-github {
-  color: #FFFFFF;
-  background-color: #000000 }
-.button.button-github:hover,
-.button.button-github:focus {
-  filter: brightness(90%) }
-
-/* Gitlab */
-.button.button-gitlab {
-  color: #ffffff;
-  background-color: #6151b2 }
-.button.button-gitlab:hover,
-.button.button-gitlab:focus {
-  filter: brightness(90%) }
 
 /* Goodreads */
 .button.button-goodreads {
