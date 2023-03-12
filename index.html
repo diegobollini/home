@@ -1,189 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- Page Information
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8" />
-    <title>El jardín de Diego</title>
-    <meta name="description" content="mi sitio personal" />
-    <meta name="author" content="Diego Bollini" />
-
-    <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="preconnect" href="https://fonts.gstatic.com/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Diego</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Piazzolla:opsz@8..30&display=swap"
       rel="stylesheet"
     />
-
-    <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/skeleton-light.css" />
-    <link rel="stylesheet" href="css/brands.css" />
-
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/faea0db540.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/avataaar.svg" />
   </head>
   <body>
-    <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container">
-      <div class="row">
-        <div class="column" style="margin-top: 10%">
-          <!-- Your Image Here -->
-          <img
-            src="images/avatar-lo_fi.webp"
-            srcset="images/avatar-lo_fi.webp 3x"
-            alt="Avatar Diego"
-          />
-
-          <!-- Title -->
-          <h1 class="text_color">Mis links</h1>
-
-          <!-- Short Bio -->
-          <p class="text_color">
-            Este es un fork de
-            <a
-              href="https://github.com/sethcottle/littlelink"
-              target="_blank"
-              rel="noopener"
-              >LittleLink</a
-            >, una alternativa para deployar un sitio de links como linktree,
-            que se lo ví al
-            <a href="https://peladonerd.com/" target="_blank" rel="noopener"
-              >PeladoNerd</a
-            >.
-          </p>
-
-          <!-- Github -->
-          <a
-            class="button button-github"
-            href="https://github.com/diegobollini/"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="icon"
-              src="images/icons/github.svg"
-              alt="GitHub Logo"
-            />GitHub</a
-          >
-          <br />
-
-          <!-- Gitlab -->
-          <a
-            class="button button-gitlab"
-            href="https://gitlab.com/diegobollini/"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="icon"
-              src="images/icons/gitlab.svg"
-              alt="GitLab Logo"
-            />GitLab</a
-          >
-          <br />
-
-          <!-- LinkedIn -->
-          <a
-            class="button button-linked"
-            href="https://www.linkedin.com/in/diegobollini"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="icon"
-              src="images/icons/linkedin.svg"
-              alt="LinkedIn Logo"
-            />LinkedIn</a
-          >
-          <br />
-
-          <h2 class="text_color">Laboratorio</h2>
-          <!-- Wiki -->
-          <a
-            class="button button-wiki"
-            href="https://wiki.bolli.ar"
-            target="_blank"
-            rel="noopener"
-            ><img class="icon" src="images/icons/garden.png" alt="Wiki" />Wiki y
-            jardín</a
-          >
-          <br />
-
-          <!-- Ansible -->
-          <a
-            class="button button-ansible"
-            href="https://github.com/adhoc-dev/ansible"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="icon"
-              src="images/icons/ansible-icon.svg"
-              alt="Proyecto Ansible"
-            />Ansible Dev-Adhoc</a
-          >
-          <br />
-
-          <!-- Mis .dotfiles -->
-          <a
-            class="button button-dotfiles"
-            href="https://gitlab.com/diegobollini/.misdotfiles"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="icon"
-              src="images/icons/gitlab.svg"
-              alt="Proyecto .dotfiles"
-            />Mis .dotfiles</a
-          >
-          <br />
-
-          <!-- Versión 1 del sitio -->
-          <a
-            class="button button-version"
-            href="https://diegobollini.gitlab.io/links-like-a-tree/"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="icon"
-              src="images/avataaar.svg"
-              alt="Versión 1 del sitio"
-            />Versión 1</a
-          >
-          <br />
-
-          <!-- Landing La Libre -->
-          <a
-            class="button button-libre"
-            href="https://lalibrecf.com.ar"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="icon"
-              src="images/icons/favicon_libre.png"
-              alt="Sitio La Libre"
-            />Landing La Libre</a
-          >
-          <br />
-
-          <br />
-          <p class="text_color">
-            Armá tu versión de este sitio con
-            <a href="https://littlelink.io" target="_blank" rel="noopener"
-              >LittleLink</a
-            >.
-          </p>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Diego Bollini</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://elbolli.notion.site/Wiki-d0bd7f38b8554e40aa0d38766b308dff"
+                target="_blank"
+                >Wiki</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+
+    <div class="container my-5">
+      <h2 id="proyectos">
+        Proyectos +
+        <a
+          class="no__underline"
+          href="https://https://www.notion.so/elbolli/Proyectos-1ee44995e087427ea6791a52f7465b35"
+          target="_blank"
+          >contexto</a
+        >
+      </h2>
+      <ul class="list-group list-group-flush mt-3">
+        <li class="list-group-item">
+          <h5>
+            <a
+              class="no__underline"
+              href="https://lalibrecf.com.ar"
+              target="_blank"
+              >La Libre</a
+            >
+          </h5>
+          <p class="mb-1">
+            Página web de La Libre, librería feminista, asociativa y comunitaria
+            de Rosario.
+          </p>
+          <small>Tecnologías: html, sass, bootstrap, gitlab, vercel</small>
+        </li>
+        <li class="list-group-item">
+          <h5>
+            <a
+              class="no__underline"
+              href="https://lacolifata.com.ar"
+              target="_blank"
+              >La Colifata WP</a
+            >
+          </h5>
+          <p class="mb-1">
+            Sitio de La Colifata, la radio de (ex) internas/os del hospital
+            Borda.
+          </p>
+          <small>Tecnologías: wordpress, php, bulma css, html</small>
+        </li>
+        <li class="list-group-item">
+          <h5>
+            <a
+              class="no__underline"
+              href="https://github.com/diegobollini/my_ansible"
+              target="_blank"
+              >Ansible</a
+            >
+          </h5>
+          <p class="mb-1">
+            Proyecto experimental y de aprendizaje para automatizar la
+            preparación de mi notebook personal.
+          </p>
+          <small>Tecnologías: ansible, vagrant</small>
+        </li>
+        <li class="list-group-item">
+          <h5>
+            <a
+              class="no__underline"
+              href="https://cueras.com.ar"
+              target="_blank"
+              >Cueras</a
+            >
+          </h5>
+          <p class="mb-1">
+            Landing sencilla para
+            <a href="http://instagram.com/cueras.gc" target="_blank"
+              >@cueras.gc</a
+            >
+          </p>
+          <small>Tecnologías: html5, bootstrap5, github, vercel</small>
+        </li>
+        <li class="list-group-item">
+          <h5>Home</h5>
+          <p class="mb-1">
+            Soy parte de la generación que no tiene casa pero sí un sitio web...
+            (y es este para colmo)
+          </p>
+          <small>Tecnologías: html5, bootstrap5, github, vercel</small>
+        </li>
+      </ul>
     </div>
 
-    <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <div class="container my-5">
+      <h2>Links</h2>
+      <ul class="list-group list-group-flush mt-3">
+        <li class="list-group-item">
+          <h5>GitHub</h5>
+          <p class="mb-1">A short description of my first project goes here.</p>
+          <small>Tecnologías: JavaScript</small>
+        </li>
+        <li class="list-group-item">
+          <h5>GitLab</h5>
+          <p class="mb-1">
+            A short description of my second project goes here.
+          </p>
+          <small>Tecnologías: Python</small>
+        </li>
+        <li class="list-group-item">
+          <h5>Wiki</h5>
+          <p class="mb-1">A short description of my third project goes here.</p>
+          <small>Tecnologías: Java</small>
+        </li>
+      </ul>
+    </div> -->
+
+    <!-- FOOTER -->
+    <footer class="footer bg-dark text-light py-3 sticky-bottom">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-md-6 text-md-start text-center">
+            <p class="text-muted mb-md-0 mb-3">2023 Diego Bollini</p>
+          </div>
+          <div class="col-12 col-md-6 text-md-end text-center">
+            <a
+              href="https://gitlab.com/diegobollini/"
+              target="_blank"
+              class="me-3"
+              ><i class="fab fa-gitlab fa-lg text-light"></i
+            ></a>
+            <a
+              href="https://github.com/diegobollini/"
+              target="_blank"
+              class="me-3"
+              ><i class="fab fa-github fa-lg text-light"></i
+            ></a>
+            <a
+              href="https://www.twitter.com/diegobollini"
+              target="_blank"
+              class="me-3"
+              ><i class="fab fa-twitter fa-lg text-light"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/diegobollini"
+              target="_blank"
+              class="me-3"
+              ><i class="fab fa-linkedin fa-lg text-light"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
