@@ -25,6 +25,10 @@ body {
   }
 }
 
+.no__underline {
+  text-decoration: none;
+}
+
 footer {
   position: absolute;
   bottom: 0;
