@@ -1,0 +1,223 @@
+:root {
+  color-scheme: dark;
+  --background: #10151c;
+  --surface: rgb(12 17 23 / 78%);
+  --surface-border: rgb(255 255 255 / 10%);
+  --text: #d4d4d4;
+  --muted: #a9b2bd;
+  --key: #9cdcfe;
+  --value: #ce9178;
+  --focus: #f4c59f;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  line-height: 1.6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 20rem;
+  min-height: 100%;
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+  background:
+    linear-gradient(rgb(5 10 16 / 76%), rgb(5 10 16 / 84%)),
+    url("../images/back.webp") center / cover fixed;
+}
+
+a {
+  color: var(--value);
+  text-decoration-color: rgb(206 145 120 / 55%);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+a:focus-visible {
+  border-radius: 0.15rem;
+  outline: 0.15rem solid var(--focus);
+  outline-offset: 0.2rem;
+}
+
+.site-shell {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+  padding-block: clamp(2rem, 6vw, 5rem);
+}
+
+header,
+section {
+  position: relative;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--surface-border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  box-shadow: 0 1.25rem 3rem rgb(0 0 0 / 18%);
+  backdrop-filter: blur(0.35rem);
+}
+
+section {
+  margin-top: 1rem;
+}
+
+.eyebrow,
+h2,
+dt,
+.stack,
+.brace {
+  color: var(--key);
+}
+
+.eyebrow,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+ul {
+  margin-block-start: 0;
+}
+
+.eyebrow {
+  margin-block-end: 0.2rem;
+}
+
+h1 {
+  margin-block-end: 1.25rem;
+  color: var(--value);
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  line-height: 1.15;
+}
+
+h2 {
+  margin-block-end: 1.5rem;
+  font-size: clamp(1.1rem, 3vw, 1.35rem);
+  font-weight: 500;
+}
+
+h2 span,
+.brace {
+  color: var(--value);
+}
+
+.facts {
+  margin-block-end: 0.75rem;
+}
+
+.facts div {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 1rem;
+}
+
+dt::after {
+  content: ":";
+}
+
+dd {
+  margin-inline-start: 0;
+  color: var(--value);
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 2.5rem;
+}
+
+.project {
+  padding-block: 1rem;
+  border-top: 1px solid var(--surface-border);
+}
+
+.project h3 {
+  margin-block-end: 0.45rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.project h3::before,
+.links li::before {
+  content: "- ";
+  color: var(--key);
+}
+
+.project p {
+  margin-block-end: 0.6rem;
+}
+
+.project .stack {
+  margin-block-end: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.stack::before {
+  content: "tecnologías: ";
+  color: var(--key);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  margin-block-end: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.brace {
+  display: block;
+}
+
+@media (max-width: 44rem) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .site-shell {
+    width: min(100% - 1rem, 72rem);
+    padding-block: 0.5rem;
+  }
+
+  header,
+  section {
+    padding: 1rem;
+  }
+
+  .facts div,
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .facts div {
+    gap: 0;
+    margin-block-end: 0.5rem;
+  }
+
+  .facts dt,
+  .facts dd {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  header,
+  section {
+    background: #0c1117;
+    backdrop-filter: none;
+  }
+}
